@@ -4,14 +4,10 @@ function file_get_content($path) {
 	if (!file_exists ($path)) {
 	 echo  ("File not found");
 	}
-	 else {
-	 echo false;
-	 }
-	$f = fopen($path,'r');
-	$length = filesize("text.txt");
-	$str = fread($f, $length);
-	fclose($f);
+	else {
+	 echo $f = file_get_contents("text.txt");
 	return $str;
+	}
  }
  echo file_get_content("text.txt");
  
