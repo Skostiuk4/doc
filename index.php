@@ -7,6 +7,12 @@ function file_get_content($path) {
 	fclose($f);
 	return $str;
 
+	$filename = "file.txt";
+	if (!file_exists ($filename)):
+	 echo  ("File not found");
+	endif;
+  
  }
 
  echo file_get_contents("text.txt");
+ 
