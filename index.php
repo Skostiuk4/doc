@@ -5,18 +5,16 @@ function file_get_content($path) {
 	$length = filesize("text.txt");
 	$str = fread($f, $length);
 	fclose($f);
-	return $str;
-
 	$filename = ("text.txt"); 
 	if (!file_exists ($path)): {
 	 echo  ("File not found");
 	}
 	
 	endif;
-
+	return $str;
   
  }
 
- echo file_get_contents("text.txt");
+ echo file_get_content("text.txt");
  
 ?>
