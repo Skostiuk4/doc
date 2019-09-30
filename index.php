@@ -4,6 +4,9 @@ function file_get_content($path) {
 	if (!file_exists ($path)) {
 	 echo  ("File not found");
 	}
+	 else {
+	 	echo false;
+	 }
 	$f = fopen($path,'r');
 	$length = filesize("text.txt");
 	$str = fread($f, $length);
