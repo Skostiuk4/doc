@@ -2,11 +2,10 @@
 
 function file_get_content($path) {
 	if (!file_exists ($path)) {
-	 echo  ("File not found");
+	return  ("File not found");
 	}
 	else {
-	 echo $f = file_get_contents("text.txt");
-	return $str;
+	return $f = file_get_contents("text.txt");
 	}
  }
  echo file_get_content("text.txt");
