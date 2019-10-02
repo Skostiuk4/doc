@@ -12,19 +12,19 @@ function file_get_content($path){
 
 
 
-	function file_get ($files){
+	function file_get ($files)
+  {
     foreach ($files as $file) {
-      file_get_content($files);
+      file_get_content ($files);
+    }
+  }
       $files = array("text1.txt", "order.txt", "sample.txt", "demo.txt");
-      
-      if (file_exists($files)) {
+      if (!file_exists($files)) {
         return ("File not found!");
       } else {
         return file_get_contents($files);
-
-      }
-    }
 	}
-  echo file_get($files);
+    $files = array("text1.txt","order.txt","sample.txt","demo.txt");
+    echo file_get($files);
 
 
